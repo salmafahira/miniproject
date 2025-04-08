@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Mini Project</string>
     <string name="intro">Has your daily water needs been met? Lets check it out now!</string>
+    <string name="berat_badan">Body Weight</string>
+    <string name="aktivitas">Activity</string>
+    <string name="ringan">Light</string>
+    <string name="sedang">Medium</string>
+    <string name="berat">Heavy</string>
 </resources>

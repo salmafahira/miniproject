@@ -2,4 +2,9 @@
 <resources>
     <string name="app_name">Mini Project</string>
     <string name="intro">Apakah kebutuhan air perhari kamu sudah terpenuhi? Ayo cek sekarang!</string>
+    <string name="berat_badan">Berat Badan</string>
+    <string name="aktivitas">Aktivitas</string>
+    <string name="ringan">Ringan</string>
+    <string name="sedang">Sedang</string>
+    <string name="berat">Berat</string>
 </resources>
