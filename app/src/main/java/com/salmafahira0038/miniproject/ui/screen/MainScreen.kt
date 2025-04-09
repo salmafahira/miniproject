@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -41,6 +42,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.TextStyle
@@ -96,11 +98,14 @@ fun ScreenContent(modifier: Modifier = Modifier) {
     val selectedAwal = remember { mutableIntStateOf(pilihKonversi[0]) }
 
     val radioOption = listOf(
-        stringResource(id = R.string.pilih_celcius),
-        stringResource(id = R.string.pilih_fahrenheit),
-        stringResource(id = R.string.pilih_kelvin),
+        R.drawable.celsius to R.string.pilih_celcius,
+        R.drawable.fahrenheit to R.string.pilih_fahrenheit,
+        R.drawable.kelvin to R.string.pilih_kelvin
     )
-    var pilihSuhuAwal by remember { mutableStateOf(radioOption[0]) }
+
+    var pilihSuhuAwal by remember { mutableIntStateOf(R.string.pilih_celcius) }
+
+
 
     Column(
         modifier = modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp),
@@ -128,17 +133,19 @@ fun ScreenContent(modifier: Modifier = Modifier) {
             Row (
                 modifier = Modifier.padding(top = 6.dp).border(1.dp, Color.LightGray, RoundedCornerShape(4.dp))
             ) {
-                radioOption.forEach { text ->
+                radioOption.forEach { (iconRes, labelRes) ->
                     ConvertionOption(
-                        label = text,
-                        isSelected = pilihSuhuAwal == text,
+                        iconRes = iconRes,
+                        label = stringResource(id = labelRes),
+                        isSelected = pilihSuhuAwal == labelRes,
                         modifier = Modifier
                             .selectable(
-                                selected = pilihSuhuAwal == text,
-                                onClick = { pilihSuhuAwal = text },
+                                selected = pilihSuhuAwal == labelRes,
+                                onClick = { pilihSuhuAwal = labelRes },
                                 role = Role.RadioButton
                             )
-                            .weight(2f).padding(9.dp)
+                            .weight(2f)
+                            .padding(9.dp)
                     )
                 }
             }
@@ -187,20 +194,27 @@ fun ScreenContent(modifier: Modifier = Modifier) {
         }
     }
 }
-    @Composable
-    fun ConvertionOption(label: String, isSelected: Boolean, modifier: Modifier) {
-        Row(
-            modifier = modifier,
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            RadioButton(selected = isSelected, onClick = null)
-            Text(
-                text = label,
-                style = MaterialTheme.typography.bodyLarge,
-                modifier = Modifier.padding(start = 8.dp)
-            )
-        }
+@Composable
+fun ConvertionOption(iconRes: Int, label: String, isSelected: Boolean, modifier: Modifier) {
+    Row(
+        modifier = modifier,
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        RadioButton(selected = isSelected, onClick = null)
+        Image(
+            painter = painterResource(id = iconRes),
+            contentDescription = null,
+            modifier = Modifier
+                .padding(start = 8.dp)
+                .width(24.dp)
+        )
+        Text(
+            text = label,
+            style = MaterialTheme.typography.bodyLarge,
+            modifier = Modifier.padding(start = 8.dp)
+        )
     }
+}
 
 
     @Preview(showBackground = true)
