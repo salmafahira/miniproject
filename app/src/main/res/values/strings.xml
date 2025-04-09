@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">Mini Project</string>
-    <string name="intro">Has your daily water needs been met? Lets check it out now!</string>
-    <string name="berat_badan">Body Weight</string>
-    <string name="aktivitas">Activity</string>
-    <string name="ringan">Light</string>
-    <string name="sedang">Medium</string>
-    <string name="berat">Heavy</string>
+    <string name="intro">Confused about temperature conversion? Dont worry, this app is ready to help you!.
+        All you have to do is enter the temperature, select the starting unit and the conversion destination,
+        and then calculate it. Come on, try it now!</string>
+    <string name="masukkan_suhu">Enter the temperature</string>
+    <string name="pilih_konversi">Select Temperature Conversion</string>
+    <string name="celcius">Celcius</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="kelvin">Kelvin</string>
 </resources>

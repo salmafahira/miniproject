@@ -76,13 +76,13 @@ fun MainScreen(){
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ScreenContent(modifier: Modifier = Modifier) {
-    var berat by remember { mutableStateOf("") }
-    val aktivitas =
-        arrayOf(R.string.ringan, R.string.sedang, R.string.berat)
+    var suhu by remember { mutableStateOf("") }
+    val pilihKonversi =
+        arrayOf(R.string.celcius, R.string.fahrenheit, R.string.kelvin)
 
     val expandedAwal = remember { mutableStateOf(false) }
 
-    val selectedAwal = remember { mutableIntStateOf(aktivitas[0])  }
+    val selectedAwal = remember { mutableIntStateOf(pilihKonversi[0])  }
 
     Column (
         modifier = modifier.fillMaxSize().padding(16.dp),
@@ -95,10 +95,10 @@ fun ScreenContent(modifier: Modifier = Modifier) {
             modifier = Modifier.fillMaxWidth()
         )
         OutlinedTextField(
-            value = berat,
-            onValueChange = {berat = it},
-            label = { Text(text = stringResource(R.string.berat_badan))},
-            trailingIcon = { Text(text = "kg") },
+            value = suhu,
+            onValueChange = {suhu = it},
+            label = { Text(text = stringResource(R.string.masukkan_suhu))},
+//            trailingIcon = { Text(text = "kg") },
             singleLine = true,
             keyboardOptions = KeyboardOptions(
                 keyboardType = KeyboardType.Number,
@@ -116,7 +116,7 @@ fun ScreenContent(modifier: Modifier = Modifier) {
                     value = stringResource(selectedAwal.intValue),
                     onValueChange = {},
                     readOnly = true,
-                    label = { Text(text = stringResource(R.string.aktivitas)) },
+                    label = { Text(text = stringResource(R.string.pilih_konversi)) },
                     trailingIcon = {
                         ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedAwal.value)
                     },
@@ -130,7 +130,7 @@ fun ScreenContent(modifier: Modifier = Modifier) {
                     expanded = expandedAwal.value,
                     onDismissRequest = { expandedAwal.value = false }
                 ) {
-                    aktivitas.forEach { resId ->
+                    pilihKonversi.forEach { resId ->
                         DropdownMenuItem(
                             text = { Text(text = stringResource(resId)) },
                             onClick = {
