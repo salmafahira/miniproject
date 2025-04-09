@@ -6,7 +6,7 @@
         Yuk, cobain sekarang!</string>
     <string name="masukkan_suhu">Masukkan suhu</string>
     <string name="pilih_konversi">Pilih Konversi Suhu</string>
-    <string name="celcius">Celcius</string>
+    <string name="celcius">Celsius</string>
     <string name="fahrenheit">Fahrenheit</string>
     <string name="kelvin">Kelvin</string>
 </resources>
