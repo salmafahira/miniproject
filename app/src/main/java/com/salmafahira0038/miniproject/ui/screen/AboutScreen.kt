@@ -70,7 +70,9 @@ fun AboutScreen(navController: NavHostController) {
             )
             Text(
                 text = stringResource(R.string.copyright),
-                modifier = Modifier.padding(innerPadding).padding(16.dp)
+                modifier = Modifier
+                    .padding(innerPadding)
+                    .padding(16.dp)
             )
 
         }
