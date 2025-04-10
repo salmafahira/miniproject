@@ -4,12 +4,22 @@
         All you have to do is enter the temperature, select the starting unit and the conversion destination,
         and then calculate it. Come on, try it now!</string>
     <string name="masukkan_suhu">Enter the temperature</string>
+    <string name="suhu_awal">Select the Initial Temperature Unit :</string>
     <string name="pilih_konversi">Select Temperature Conversion</string>
     <string name="celcius">Celsius</string>
     <string name="fahrenheit">Fahrenheit</string>
     <string name="kelvin">Kelvin</string>
-    <string name="pilih_celcius">Celsius</string>
-    <string name="pilih_fahrenheit">Fahrenheit</string>
-    <string name="pilih_kelvin">Kelvin</string>
-    <string name="hitung">Hitung</string>
+    <string name="hitung">Count</string>
+    <string name="materi">Explanation</string>
+    <string name="copyright">Temperature conversion is the process of changing the temperature from a single scale
+        to other scales. Three commonly used temperature scales: \n\n1. Celsius (°C) – Temperature scale
+        most common in the world, including Indonesia.\n\n2. Fahrenheit (°F) – Used in
+        The United States and several other countries such as Belize and the Bahamas.\n\n 3.
+        Kelvin (K) – International temperature scale used in science.</string>
+    <string name="kembali">Back</string>
+    <string name="bagikan">Share</string>
+    <string name="bagikan_template">Convert Temperature %1$s %2$s to %3$s the result is %4$s</string>
+    <string name="input_invalid">Cannot be empty</string>
+    <string name="gambar_rumus">Temperature Conversion Formula:</string>
+    <string name="hasil_konversi">Conversion Result : </string>
 </resources>

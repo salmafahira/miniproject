@@ -5,12 +5,22 @@
         Kamu tinggal masukkin suhu, pilih satuan awal dan tujuan konversi, lalu menghitungnya.
         Yuk, cobain sekarang!</string>
     <string name="masukkan_suhu">Masukkan suhu</string>
+    <string name="suhu_awal">Pilih Satuan Suhu Awal :</string>
     <string name="pilih_konversi">Pilih Konversi Suhu</string>
     <string name="celcius">Celsius</string>
     <string name="fahrenheit">Fahrenheit</string>
     <string name="kelvin">Kelvin</string>
-    <string name="pilih_celcius">Celsius</string>
-    <string name="pilih_fahrenheit">Fahrenheit</string>
-    <string name="pilih_kelvin">Kelvin</string>
     <string name="hitung">Hitung</string>
+    <string name="materi">Penjelasan</string>
+    <string name="copyright">Konversi suhu adalah proses mengubah suhu dari satu skala
+        ke skala lainnya. Tiga skala suhu yang umum digunakan : \n\n1. Celsius (°C) – Skala suhu
+        yang paling umum di dunia, termasuk Indonesia.\n\n2. Fahrenheit (℉) – Digunakan di
+        Amerika Serikat dan beberapa negara lain seperti Belize dan Bahamas.\n\n 3.
+Kelvin (K) – Skala suhu internasional yang digunakan dalam ilmu pengetahuan.</string>
+    <string name="kembali">Kembali</string>
+    <string name="bagikan">Bagikan</string>
+    <string name="bagikan_template">Konversi Suhu %1$s %2$s ke %3$s hasilnya adalah %4$s</string>
+    <string name="input_invalid">Tidak boleh kosong</string>
+    <string name="gambar_rumus">Ini Gambar rumus konversi suhu:</string>
+    <string name="hasil_konversi">Hasil Konversi :</string>
 </resources>
