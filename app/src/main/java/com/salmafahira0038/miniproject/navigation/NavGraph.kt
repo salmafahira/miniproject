@@ -1,6 +1,6 @@
 package com.salmafahira0038.miniproject.navigation
 
-import AboutScreen
+import com.salmafahira0038.miniproject.ui.screen.AboutScreen
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost

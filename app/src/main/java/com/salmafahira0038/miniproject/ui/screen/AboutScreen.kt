@@ -1,3 +1,5 @@
+package com.salmafahira0038.miniproject.ui.screen
+
 import android.content.res.Configuration
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
@@ -54,7 +56,7 @@ fun AboutScreen(navController: NavHostController) {
     ) { innerPadding ->
         Column {
             Text(
-                text = stringResource(R.string.gambar_rumus),
+                text = stringResource(R.string.rumus),
                 modifier = Modifier.padding(innerPadding).padding(10.dp)
             )
             Image(

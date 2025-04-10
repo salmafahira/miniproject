@@ -20,6 +20,7 @@
     <string name="bagikan">Share</string>
     <string name="bagikan_template">Convert Temperature %1$s %2$s to %3$s the result is %4$s</string>
     <string name="input_invalid">Cannot be empty</string>
-    <string name="gambar_rumus">Temperature Conversion Formula:</string>
+    <string name="gambar_rumus">Here is a picture of the temperature conversion formula:</string>
+    <string name="rumus">Temperature conversion formula:</string>
     <string name="hasil_konversi">Conversion Result : </string>
 </resources>

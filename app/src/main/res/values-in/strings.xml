@@ -22,5 +22,6 @@ Kelvin (K) – Skala suhu internasional yang digunakan dalam ilmu pengetahuan.</
     <string name="bagikan_template">Konversi Suhu %1$s %2$s ke %3$s hasilnya adalah %4$s</string>
     <string name="input_invalid">Tidak boleh kosong</string>
     <string name="gambar_rumus">Ini Gambar rumus konversi suhu:</string>
+    <string name="rumus">Rumus konversi suhu:</string>
     <string name="hasil_konversi">Hasil Konversi :</string>
 </resources>
