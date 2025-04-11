@@ -13,10 +13,10 @@
     <string name="hitung">Hitung</string>
     <string name="materi">Penjelasan</string>
     <string name="copyright">Konversi suhu adalah proses mengubah suhu dari satu skala
-        ke skala lainnya. Tiga skala suhu yang umum digunakan : \n\n1. Celsius (°C) – Skala suhu
-        yang paling umum di dunia, termasuk Indonesia.\n\n2. Fahrenheit (℉) – Digunakan di
-        Amerika Serikat dan beberapa negara lain seperti Belize dan Bahamas.\n\n 3.
-Kelvin (K) – Skala suhu internasional yang digunakan dalam ilmu pengetahuan.</string>
+        ke skala lainnya. Tiga skala suhu yang umum digunakan : \n1. Celsius (°C) – Skala suhu
+        yang paling umum di dunia, termasuk Indonesia.\n2. Fahrenheit (℉) – Digunakan di
+        Amerika Serikat dan beberapa negara lain seperti Belize dan Bahamas.\n3.
+Kelvin (K) – Skala suhu internasional yang digunakan dalam ilmu pengetahuan. \n\nCopyright © 2025 Salma Fahira Azzahra. \n All right reserved</string>
     <string name="kembali">Kembali</string>
     <string name="bagikan">Bagikan</string>
     <string name="bagikan_template">Konversi Suhu %1$s %2$s ke %3$s hasilnya adalah %4$s</string>

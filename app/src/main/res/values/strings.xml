@@ -12,10 +12,10 @@
     <string name="hitung">Count</string>
     <string name="materi">Explanation</string>
     <string name="copyright">Temperature conversion is the process of changing the temperature from a single scale
-        to other scales. Three commonly used temperature scales: \n\n1. Celsius (°C) – Temperature scale
-        most common in the world, including Indonesia.\n\n2. Fahrenheit (°F) – Used in
-        The United States and several other countries such as Belize and the Bahamas.\n\n 3.
-        Kelvin (K) – International temperature scale used in science.</string>
+        to other scales. Three commonly used temperature scales: \n1. Celsius (°C) – Temperature scale
+        most common in the world, including Indonesia.\n2. Fahrenheit (°F) – Used in
+        The United States and several other countries such as Belize and the Bahamas.\n3.
+        Kelvin (K) – International temperature scale used in science. \n\nCopyright © 2025 Salma Fahira Azzahra. \n All right reserved</string>
     <string name="kembali">Back</string>
     <string name="bagikan">Share</string>
     <string name="bagikan_template">Convert Temperature %1$s %2$s to %3$s the result is %4$s</string>
